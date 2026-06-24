@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrenamiento Práctico - Queenland Tech | Capacitación Hands-On en Fibra Óptica</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Queenland Tech ofrece entrenamiento práctico en fibra óptica con equipo real de fusión y medición. Capacitación hands-on para técnicos y profesionales del sector telecomunicaciones." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/vendors/ienet-icons/style.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/ienet.css" />
+    
+    <style>
+        /* Cambio de color rojo a verde #A6CE39 */
+        .ienet-btn,
+        .topbar-one__social a:hover,
+        .main-header__cart,
+        .search-toggler:hover,
+        .main-header__call__icon,
+        .main-footer__middle__call__icon,
+        .scroll-to-top:hover,
+        .mobile-nav__close:hover,
+        .page-header__title span,
+        .sidebar-one__close:hover {
+            color: #A6CE39 !important;
+        }
+        
+        .ienet-btn,
+        .scroll-to-top:hover,
+        .mobile-nav__close:hover {
+            background-color: #A6CE39 !important;
+        }
+        
+        .ienet-btn:hover {
+            background-color: #000000 !important;
+            color: #A6CE39 !important;
+        }
+    </style>
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <div class="topbar-one topbar-one--inner">
+            <div class="container-fluid">
+                <div class="topbar-one__inner">
+                    <ul class="list-unstyled topbar-one__info">
+                        <li class="topbar-one__info__item">
+                            <span class="topbar-one__info__icon"><i class="icon-mail"></i></span>
+                            <a href="mailto:info@queenlandtech.com">info@queenlandtech.com</a>
+                        </li>
+                        <li class="topbar-one__info__item">
+                            <span class="topbar-one__info__icon"><i class="icon-mail"></i></span>
+                            <a href="mailto:ltorres@queenlandtech.com">ltorres@queenlandtech.com</a>
+                        </li>
+                        <li class="topbar-one__info__item">
+                            <span class="topbar-one__info__icon"><i class="icon-maps-and-flags"></i></span>
+                            Higüey, República Dominicana
+                        </li>
+                    </ul><!-- /.list-unstyled topbar-one__info -->
+                    <div class="topbar-one__right">
+                        <div class="topbar-one__social">
+
+                            <a href="https://facebook.com">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                            <a href="https://twitter.com">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                            <a href="https://instagram.com">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span>
+                            </a>
+                        </div><!-- /.topbar-one__social -->
+                    </div><!-- /.topbar-one__right -->
+                </div><!-- /.topbar-one__inner -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /.topbar-one -->
+
+        <header class="main-header main-header--inner sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo-dark.png" alt="Queenland Tech" height="80">
+                        </a>
+                    </div><!-- /.main-header__logo -->
+                    <a href="#" class="main-header__toggler"><span class="icon-menu"></span></a>
+                    <nav class="main-header__nav main-menu">
+                        <ul class="main-menu__list">
+
+                            <li>
+                                <a href="index-3.html">Inicio</a> 
+
+
+                            <li>
+                                <a href="about.html">Nosotros</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Páginas</a>
+                                <ul>
+                                    
+                                    <li class="dropdown">
+                                        <a href="#">Equipo</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="team.html">Nuestro Equipo</a></li>
+                                            <li><a href="team-carousel.html">Equipo Carrusel</a></li>
+                                            <li><a href="team-details.html">Detalles del Equipo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="reviews.html">Testimonios</a></li>
+                                    <li><a href="reviews-carousel.html">Testimonios Carrusel</a></li>
+                                    <li><a href="packages.html">Programas de Certificación</a></li>
+                                    <li><a href="packages-carousel.html">Certificaciones Carrusel</a></li>
+                                    <li>
+                                        <a href="gallery.html">Galería</a>
+                                        <ul>
+                                            <li><a href="gallery.html">Galería Masonry</a></li>
+                                            <li><a href="gallery-filter.html">Galería con Filtro</a></li>
+                                            <li><a href="gallery-grid.html">Galería en Cuadrícula</a></li>
+                                            <li><a href="gallery-carousel.html">Galería Carrusel</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Cursos</a>
+                                <ul>
+                                    <li><a href="services.html">Todos los Cursos</a></li>
+                                    <li><a href="services-carousel.html">Cursos Carrusel</a></li>
+                                    <li><a href="service-d-broadband.html">Curso Fibra Óptica FTTH</a></li>
+                                    <li><a href="service-d-iptv.html">Certificación en Redes</a></li>
+                                    <li><a href="service-d-cyber-security.html">Formación para Empresas</a></li>
+                                    <li><a href="service-d-landline.html">Entrenamiento Práctico</a></li>
+                                    <li><a href="service-d-tv.html">Capacitación In-Company</a></li>
+                                    <li><a href="service-d-connectivity.html">Outsourcing de Técnicos</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#">Tienda</a>
+                                <ul class="sub-menu">
+                                    <li class="dropdown">
+                                        <a href="#">Productos</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="products.html">Sin Barra Lateral</a></li>
+                                            <li><a href="products-left.html">Barra Lateral Izquierda</a></li>
+                                            <li><a href="products-right.html">Barra Lateral Derecha</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="products-carousel.html">Productos Carrusel</a></li>
+                                    <li><a href="product-details.html">Detalles del Producto</a></li>
+                                    <li><a href="cart.html">Carrito</a></li>
+                                    <li><a href="checkout.html">Finalizar Compra</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Noticias</a>
+                                <ul class="sub-menu">
+                                    <li class="dropdown">
+                                        <a href="#">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog-grid.html">Sin Barra Lateral</a></li>
+                                            <li><a href="blog-grid-left.html">Barra Lateral Izquierda</a></li>
+                                            <li><a href="blog-grid-right.html">Barra Lateral Derecha</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Recursos Técnicos</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Sin Barra Lateral</a></li>
+                                            <li><a href="blog-list-left.html">Barra Lateral Izquierda</a></li>
+                                            <li><a href="blog-list-right.html">Barra Lateral Derecha</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog-carousel.html">Noticias Carrusel</a></li>
+                                    <li class="dropdown">
+                                        <a href="#">Detalles</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog-details.html">Sin Barra Lateral</a></li>
+                                            <li><a href="blog-details-left.html">Barra Lateral Izquierda</a></li>
+                                            <li><a href="blog-details-right.html">Barra Lateral Derecha</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav><!-- /.main-header__nav -->
+                    <div class="main-header__right">
+                        <div class="mobile-nav__btn mobile-nav__toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- /.mobile-nav__toggler -->
+                        <a href="#" class="search-toggler main-header__search">
+                            <i class="icon-search" aria-hidden="true"></i>
+                            <span class="sr-only">Buscar</span>
+                        </a><!-- /.search-toggler -->
+                        <a href="cart.html" class="main-header__cart">
+                            <i class="icon-cart" aria-hidden="true"></i>
+                            <span class="sr-only">Carrito</span>
+                        </a><!-- /.cart-toggler -->
+                        <div class="main-header__call">
+                            <div class="main-header__call__icon"><span class="icon-telephone"></span></div>
+                            <div class="main-header__call__title">Contacto Directo</div>
+                            <a class="main-header__call__text" href="tel:8494967296">849-496-7296</a>
+                        </div>
+                    </div><!-- /.main-header__right -->
+                </div><!-- /.main-header__inner -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.main-header -->
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <div class="page-header__layer"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <h2 class="page-header__title bw-split-in-left">Entrenamiento Práctico</h2><!-- /.page-title -->
+                <ul class="ienet-breadcrumb list-unstyled">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Nuestros Cursos</li>
+                    <li><span>Entrenamiento Práctico</span></li>
+                </ul><!-- /.thm-breadcrumb list-unstyled -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="service-details">
+            <div class="container">
+                <div class="row gutter-y-60">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content">
+                            <div class="service-details__thumbnail">
+                                <img src="assets/images/resources/service-d-4.jpg" alt="Entrenamiento Práctico en Fibra Óptica - Queenland Tech">
+                            </div><!-- /.service-details__thumbnail -->
+                            <h3 class="service-details__title">Entrenamiento Práctico en Fibra Óptica</h3><!-- /.service-details__title -->
+                            <p class="service-details__text">
+                                Nuestro entrenamiento práctico está diseñado para que los participantes adquieran habilidades reales en el manejo de equipos de fusión, medición y certificación de redes de fibra óptica. Con un enfoque hands-on, cada estudiante trabaja con herramientas profesionales utilizadas en la industria.
+                            </p>
+                            <!-- /.service-details__text -->
+                            <p class="service-details__text">
+                                El programa incluye sesiones intensivas donde los participantes realizan empalmes por fusión, mediciones con OTDR, certificación de enlaces y troubleshooting. Todo bajo la supervisión de instructores expertos con amplia experiencia en campo.
+                            </p><!-- /.service-details__text -->
+                            <h3 class="service-details__title">Beneficios del Entrenamiento Práctico</h3><!-- /.service-details__title -->
+                            <p class="service-details__text">
+                                La mejor manera de aprender es haciendo. Nuestro entrenamiento práctico te permite desarrollar la confianza y las habilidades necesarias para enfrentar los desafíos reales del sector de telecomunicaciones.
+                            </p><!-- /.service-details__text -->
+                            <ul class="list-unstyled service-details__list">
+                                <li><span class="fas fa-check"></span>Entrenamiento con fusores de fibra profesionales</li>
+                                <li><span class="fas fa-check"></span>Uso de OTDR para certificación de redes</li>
+                                <li><span class="fas fa-check"></span>Prácticas de cableado estructurado</li>
+                                <li><span class="fas fa-check"></span>Simulación de escenarios reales</li>
+                                <li><span class="fas fa-check"></span>Instructores con experiencia en campo</li>
+                                <li><span class="fas fa-check"></span>Grupos reducidos para atención personalizada</li>
+                                <li><span class="fas fa-check"></span>Certificación de competencias prácticas</li>
+                                <li><span class="fas fa-check"></span>Kit de herramientas incluido</li>
+                            </ul><!-- /.list-unstyled team-details__list -->
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="service-details__image">
+                                        <img src="assets/images/resources/service-details-p-1.jpg" alt="Práctica de fusión de fibra óptica">
+                                    </div><!-- /.service-details__image -->
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="service-details__image">
+                                        <img src="assets/images/resources/service-details-p-2.jpg" alt="Medición con OTDR">
+                                    </div><!-- /.service-details__image -->
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                            <p class="service-details__text">
+                                Al finalizar el entrenamiento, los participantes son capaces de realizar instalaciones de fibra óptica según estándares internacionales, interpretar mediciones de OTDR y solucionar problemas comunes en redes de telecomunicaciones.
+                            </p><!-- /.service-details__text -->
+                            <h3 class="service-details__title">Preguntas Frecuentes</h3><!-- /.service-details__title -->
+                            <div class="faq-one__accordion ienet-accrodion" data-grp-name="ienet-accrodion">
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4>
+                                            <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                                            ¿Qué equipo utilizamos en la práctica?
+                                        </h4>
+                                    </div><!-- /.accordian-title -->
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p>
+                                                Utilizamos equipos profesionales de fusión de fibra, OTDR, fuentes de luz, medidores de potencia y herramientas de cableado estructurado. Todo el equipo es de marcas reconocidas en la industria.
+                                            </p>
+                                        </div><!-- /.accordian-content -->
+                                    </div>
+                                </div><!-- /.accordian-item -->
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4>
+                                            <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                                            ¿Cuánto dura el entrenamiento práctico?
+                                        </h4>
+                                    </div><!-- /.accordian-title -->
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p>
+                                                Ofrecemos módulos desde 2 días intensivos hasta programas de varias semanas. La duración depende del nivel y la profundidad que requieras. Contáctanos para diseñar el programa a tu medida.
+                                            </p>
+                                        </div><!-- /.accordian-content -->
+                                    </div>
+                                </div><!-- /.accordian-item -->
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4>
+                                            <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                                            ¿Recibo algún certificado?
+                                        </h4>
+                                    </div><!-- /.accordian-title -->
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p>
+                                                Sí. Al completar el entrenamiento práctico recibirás un certificado de Queenland Tech que acredita las habilidades prácticas adquiridas durante el curso.
+                                            </p>
+                                        </div><!-- /.accordian-content -->
+                                    </div>
+                                </div><!-- /.accordian-item -->
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4>
+                                            <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                                            ¿Hay cupos limitados?
+                                        </h4>
+                                    </div><!-- /.accordian-title -->
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p>
+                                                Sí. Para garantizar una atención personalizada y que cada participante tenga acceso a los equipos, mantenemos grupos reducidos. Te recomendamos reservar con anticipación.
+                                            </p>
+                                        </div><!-- /.accordian-content -->
+                                    </div>
+                                </div><!-- /.accordian-item -->
+                            </div>
+                        </div><!-- /.service-details__content -->
+                    </div><!-- /.col-md-12 col-lg-8 -->
+                    <div class="col-md-12 col-lg-4">
+                        <div class="service-sidebar">
+                            <div class="service-sidebar__single">
+                                <ul class="list-unstyled service-sidebar__nav">
+                                    <li><a href="service-d-broadband.html">Curso Fibra Óptica FTTH</a></li>
+                                    <li><a href="service-d-iptv.html">Certificación en Redes</a></li>
+                                    <li><a href="service-d-cyber-security.html">Formación para Empresas</a></li>
+                                    <li><a href="service-d-landline.html">Entrenamiento Práctico</a></li>
+                                    <li><a href="service-d-tv.html">Capacitación In-Company</a></li>
+                                    <li><a href="service-d-connectivity.html">Outsourcing de Técnicos</a></li>
+                                </ul><!-- /.list-unstyled service-sidebar__nav -->
+                            </div><!-- /.service-sidebar__single -->
+                            <div class="service-sidebar__single ">
+                                <div class="service-sidebar__contact text-center" style="background-image: url(assets/images/backgrounds/service-contact-bg-1.jpg);">
+                                    <div class="service-sidebar__contact__icon">
+                                        <i class="icon-telephone"></i>
+                                    </div><!-- /.service-sidebar__contact__icon -->
+                                    <p class="service-sidebar__contact__number">
+                                        <span>Contáctanos</span>
+                                        <a href="tel:8494967296">849-496-7296</a>
+                                        <br>
+                                        <a href="tel:8099512786">809-951-2786</a>
+                                    </p><!-- /.service-sidebar__contact__number -->
+                                </div><!-- /.service-sidebar__contact -->
+                            </div>
+                        </div><!-- /.sidebar -->
+                    </div><!-- /.col-md-12 col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-details -->
+
+        <footer class="main-footer background-black">
+            <div class="main-footer__bg background-black" style="background-image: url(assets/images/shapes/footer-bg-1-1.png);"></div>
+            <div class="main-footer__shape-one" style="background-image: url(assets/images/resources/footer-shape-1.png);"></div>
+            <div class="main-footer__shape-two" style="background-image: url(assets/images/resources/footer-shape-2.png);"></div>
+            <!-- /.main-footer__bg -->
+            <div class="main-footer__top">
+                <div class="container">
+                    <div class="main-footer__top__inner">
+                        <ul class="list-unstyled main-footer__top__info">
+                            <li class="main-footer__top__info__item">
+                                <span class="main-footer__top__info__icon"><i class="icon-mail"></i></span>
+                                <a href="mailto:info@queenlandtech.com">info@queenlandtech.com</a>
+                            </li>
+                            <li class="main-footer__top__info__item">
+                                <span class="main-footer__top__info__icon"><i class="icon-mail"></i></span>
+                                <a href="mailto:ltorres@queenlandtech.com">ltorres@queenlandtech.com</a>
+                            </li>
+                            <li class="main-footer__top__info__item">
+                                <span class="main-footer__top__info__icon"><i class="icon-maps-and-flags"></i></span>
+                                Higüey, República Dominicana
+                            </li>
+                        </ul><!-- /.list-unstyled topbar-one__info -->
+                        <div class="main-footer__top__right">
+                            <div class="main-footer__top__social">
+
+                                <a href="https://facebook.com">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                                <a href="https://twitter.com">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                                <a href="https://instagram.com">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">Youtube</span>
+                                </a>
+                            </div><!-- /.main-footer__top__social -->
+                        </div><!-- /.main-footer__top__right -->
+                    </div><!-- /.main-footer__top__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__top -->
+            <div class="container">
+                <div class="main-footer__middle">
+                    <a href="index.html">
+                        <img src="assets/images/logo-light.png" height="80" alt="Queenland Tech">
+                    </a>
+                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="footer-widget__newsletter mc-form">
+                        <span class="footer-widget__newsletter__icon"><i class="icon-mail"></i></span>
+                        <input type="text" name="EMAIL" placeholder="Ingresa tu correo electrónico">
+                        <button type="submit" class="ienet-btn"><span>Suscribirse</span></button>
+                        <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                    </form><!-- /.footer-widget__newsletter mc-form -->
+                    <div class="main-footer__middle__call">
+                        <div class="main-footer__middle__call__icon"><span class="icon-telephone"></span></div>
+                        <div class="main-footer__middle__call__title">Contacto Directo</div>
+                        <a class="main-footer__middle__call__text" href="tel:8494967296">849-496-7296</a>
+                    </div>
+                </div><!-- /.main-footer__middle -->
+            </div><!-- /.container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="footer-widget footer-widget--about">
+                            <h2 class="footer-widget__title">Sobre Queenland Tech</h2><!-- /.footer-widget__title -->
+                            <p class="footer-widget__text">
+                                Especialistas en formación técnica en fibra óptica, certificaciones y capacitación para profesionales y empresas de telecomunicaciones. No vendemos internet. Formamos a quienes lo construyen y mantienen.
+                            </p>
+                            <a href="about.html" class="ienet-btn"><span>Contáctanos<span class="ienet-btn__icon"><i class="fas fa-chevron-right"></i></span></span></a>
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="footer-widget footer-widget--links">
+                            <h2 class="footer-widget__title">Nuestros Cursos</h2><!-- /.footer-widget__title -->
+                            <ul class="list-unstyled footer-widget__links">
+                                <li><a href="service-d-broadband.html">Curso Fibra Óptica FTTH</a></li>
+                                <li><a href="service-d-cyber-security.html">Formación para Empresas</a></li>
+                                <li><a href="service-d-tv.html">Certificaciones Técnicas</a></li>
+                                <li><a href="service-d-iptv.html">Entrenamiento Práctico</a></li>
+                                <li><a href="service-d-connectivity.html">Outsourcing de Técnicos</a></li>
+                            </ul><!-- /.list-unstyled footer-widget__links -->
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="footer-widget footer-widget--links">
+                            <h2 class="footer-widget__title">Enlaces Útiles</h2><!-- /.footer-widget__title -->
+                            <ul class="list-unstyled footer-widget__links">
+                                <li><a href="about.html">Sobre Nosotros</a></li>
+                                <li><a href="cursos.html">Nuestros Cursos</a></li>
+                                <li><a href="blog-grid-right.html">Blog y Recursos</a></li>
+                                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                            </ul><!-- /.list-unstyled footer-widget__links -->
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="footer-widget footer-widget--gallery">
+                            <h2 class="footer-widget__title">Nuestra Galería</h2><!-- /.footer-widget__title -->
+                            <div class="footer-widget__gallery">
+                                <a href="gallery.html" class="footer-widget__gallery__link">
+                                    <img src="assets/images/gallery/fg-1.jpg" alt="Queenland Tech">
+                                </a><!-- /.footer-widget__gallery__link -->
+                                <a href="gallery.html" class="footer-widget__gallery__link">
+                                    <img src="assets/images/gallery/fg-2.jpg" alt="Queenland Tech">
+                                </a><!-- /.footer-widget__gallery__link -->
+                                <a href="gallery.html" class="footer-widget__gallery__link">
+                                    <img src="assets/images/gallery/fg-3.jpg" alt="Queenland Tech">
+                                </a><!-- /.footer-widget__gallery__link -->
+                                <a href="gallery.html" class="footer-widget__gallery__link">
+                                    <img src="assets/images/gallery/fg-4.jpg" alt="Queenland Tech">
+                                </a><!-- /.footer-widget__gallery__link -->
+                                <a href="gallery.html" class="footer-widget__gallery__link">
+                                    <img src="assets/images/gallery/fg-5.jpg" alt="Queenland Tech">
+                                </a><!-- /.footer-widget__gallery__link -->
+                                <a href="gallery.html" class="footer-widget__gallery__link">
+                                    <img src="assets/images/gallery/fg-6.jpg" alt="Queenland Tech">
+                                </a><!-- /.footer-widget__gallery__link -->
+                            </div><!-- /.footer-widget__gallery -->
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+            <div class="main-footer__bottom">
+                <div class="container">
+                    <div class="main-footer__bottom__inner">
+                        <p class="main-footer__copyright">
+                            &copy; Copyright <span class="dynamic-year"></span> por Queenland Tech. Todos los derechos reservados.
+                        </p>
+                    </div><!-- /.main-footer__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__bottom -->
+        </footer><!-- /.main-footer -->
+
+    </div><!-- /.page-wrapper -->
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" width="155" alt="Queenland Tech" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:info@queenlandtech.com">info@queenlandtech.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:ltorres@queenlandtech.com">ltorres@queenlandtech.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:8494967296">849-496-7296</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:8099512786">809-951-2786</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">Youtube</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Buscar..." />
+                <button type="submit" aria-label="search submit" class="ienet-btn">
+                    <span><i class="icon-search"></i></span>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+    <!-- Sidebar One Start -->
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay"></div><!-- /.siderbar-ovarlay -->
+        <div class="sidebar-one__content">
+            <div class="sidebar-one__close"><i class="icon-plus"></i></div><!-- /.siderbar-close -->
+            <div class="sidebar-one__logo">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" alt="Queenland Tech" height="80"></a>
+            </div><!-- /.sidebar-one__logo-box -->
+            <p class="sidebar-one__text">
+                Especialistas en formación técnica en fibra óptica y telecomunicaciones. Certificamos profesionales y capacitamos empresas en República Dominicana.
+            </p>
+            <h4 class="sidebar-one__title">Información de Contacto:</h4>
+            <ul class="sidebar-one__info">
+                <li>
+                    <span class="fas fa-map-marker-alt"></span>
+                    Higüey, República Dominicana
+                </li>
+                <li>
+                    <span class="fas fa-clock"></span>
+                    Lun - Vie: 8:00 am - 6:00 pm
+                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:info@queenlandtech.com">info@queenlandtech.com</a>
+                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:rbatista@queenlandtech.com">rbatista@queenlandtech.com</a>
+                </li>
+                <li>
+                    <span class="fas fa-envelope"></span>
+                    <a href="mailto:ltorres@queenlandtech.com">ltorres@queenlandtech.com</a>
+                </li>
+                <li>
+                    <span class="fas fa-phone-alt"></span>
+                    <a href="tel:8494967296">849-496-7296</a>
+                </li>
+                <li>
+                    <span class="fas fa-phone-alt"></span>
+                    <a href="tel:8099512786">809-951-2786</a>
+                </li>
+            </ul>
+            <div class="sidebar-one__social">
+
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">Youtube</span>
+                </a>
+            </div><!-- /sidebar-one__socila -->
+            <h4 class="sidebar-one__title">Boletín:</h4>
+            <form action="#" data-url="MAILCHIMP_FORM_URL" class="sidebar-one__newsletter mc-form">
+                <input type="text" name="EMAIL" placeholder="Correo electrónico">
+                <button type="submit" class="fas fa-paper-plane">
+                    <span class="sr-only">enviar</span><!-- /.sr-only -->
+                </button>
+            </form><!-- /.footer-widget__newsletter mc-form -->
+        </div><!-- /.sidebar__content -->
+    </aside>
+    <!-- Sidebar One Start -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__text">subir</span>
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+    </a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <!-- gsap js -->
+    <script src="assets/vendors/gsap/gsap.js"></script>
+    <script src="assets/vendors/gsap/scrolltrigger.min.js"></script>
+    <script src="assets/vendors/gsap/splittext.min.js"></script>
+    <script src="assets/vendors/gsap/ienet-split.js"></script>
+    <!-- template js -->
+    <script src="assets/js/ienet.js"></script>
+</body>
+
+</html>
